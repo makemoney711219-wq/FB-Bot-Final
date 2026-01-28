@@ -1,0 +1,10 @@
+# 忽略機密檔案
+.streamlit/secrets.toml
+
+# 忽略本地資料庫 (雲端會自己建立新的)
+history.csv
+
+# 忽略系統暫存檔
+__pycache__/
+*.pyc
+.DS_Store
