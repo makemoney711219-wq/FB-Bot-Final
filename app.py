@@ -78,7 +78,7 @@ df = load_data()
 
 if not df.empty:
     # 製作選單標籤
-    df['label'] = df['日期'] + " | " + df['商品名稱']
+df['label'] = df['日期'].astype(str) + " | " + df['商品名稱'].astype(str)
     # 選單 (反轉順序讓最新的在上面)
     selected_label = st.sidebar.selectbox("選擇舊貼文：", df['label'].tolist()[::-1])
     
